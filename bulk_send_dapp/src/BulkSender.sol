@@ -17,6 +17,7 @@ contract BulkSender is
     /*///////////////////////////////////////////////////////////////
                            Modifiers
     //////////////////////////////////////////////////////////////*/
+    
     /// @dev Checks whether the caller is a module admin.
     modifier onlyModuleAdmin() {
         require(hasRole(DEFAULT_ADMIN_ROLE, _msgSender()), "403");
